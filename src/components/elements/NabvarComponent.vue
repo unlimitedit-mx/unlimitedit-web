@@ -1,22 +1,26 @@
 <script setup lang="ts">
-  import {ref} from 'vue'
+import {ref} from 'vue'
 
-  let scrolled = ref(false);
-  let height = 60;
-  let mobileOpen = ref(false);
-  function scroll() {
-    let scrollValue = window.scrollY;
-    scrolled.value = scrollValue >= height;
-    //this.searchExpanded = false;
-  }
-  function openMobileMenu() {
-    mobileOpen.value = !mobileOpen.value;
-  }
-  function openSidebar() {
-    //this.$store.app.isSiderbarOpen = true;
-    console.log('clicked');
-  }
-  window.addEventListener("scroll", scroll)
+let scrolled = ref(false);
+let height = 60;
+let mobileOpen = ref(false);
+
+function scroll() {
+  let scrollValue = window.scrollY;
+  scrolled.value = scrollValue >= height;
+  //this.searchExpanded = false;
+}
+
+function openMobileMenu() {
+  mobileOpen.value = !mobileOpen.value;
+}
+
+function openSidebar() {
+  //this.$store.app.isSiderbarOpen = true;
+  console.log('clicked');
+}
+
+window.addEventListener("scroll", scroll)
 </script>
 
 <template>
@@ -29,20 +33,14 @@
           <span class="brand-name">Unlimited IT</span>
         </router-link>
         <!-- Responsive toggle -->
-        <div class="navbar-burger" @click="openMobileMenu()">
-          <div class="menu-toggle">
-        <span class="icon-box-toggle" :class="{'is-dark-mobile': mobileOpen}">
-          <span class="rotate">
-              <i class="icon-line-top"></i>
-              <i class="icon-line-center"></i>
-              <i class="icon-line-bottom"></i>
-          </span>
-        </span>
-          </div>
-        </div>
+        <a role="button" class="navbar-burger has-text-white" v-on:click="openMobileMenu()" :class="{'is-active': mobileOpen }" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <!-- Menu -->
-      <div id="navbarMenu" class="navbar-menu light-menu" :class="{'is-dark-mobile': mobileOpen}" v-on:click="scroll()">
+      <div id="navbarMenu" class="navbar-menu light-menu" :class="{'is-active': mobileOpen}">
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
@@ -82,25 +80,19 @@
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
-        <a href="../../../index.html" class="navbar-item">
+        <router-link to="/" class="navbar-item">
           <img class="rotating" src="../../assets/img/logo/krypton-gradient.svg" alt="">
           <span class="brand-name">Unlimited IT</span>
-        </a>
+        </router-link>
         <!-- Responsive toggle -->
-        <div class="navbar-burger" @click="openMobileMenu()">
-          <div class="menu-toggle">
-                    <span class="icon-box-toggle" :class="{mobileOpen: 'active'}">
-                        <span class="rotate">
-                            <i class="icon-line-top"></i>
-                            <i class="icon-line-center"></i>
-                            <i class="icon-line-bottom"></i>
-                        </span>
-                    </span>
-          </div>
-        </div>
+        <a role="button" class="navbar-burger" v-on:click="openMobileMenu()" :class="{'is-active': mobileOpen }" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <!-- Menu -->
-      <div id="cloneNavbarMenu" class="navbar-menu" :class="{mobileOpen: 'active'}">
+      <div id="cloneNavbarMenu" class="navbar-menu" :class="{'is-active': mobileOpen && scrolled}">
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
