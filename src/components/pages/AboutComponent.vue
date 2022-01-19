@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NabvarComponent from "../elements/NabvarComponent.vue";
+import NavbarComponent from "../elements/NavbarComponent.vue";
 
 </script>
 
@@ -8,7 +8,7 @@ import NabvarComponent from "../elements/NabvarComponent.vue";
     <!-- Landing page Hero -->
     <section class="hero">
       <div class="hero-head">
-        <nabvar-component></nabvar-component>
+        <navbar-component></navbar-component>
       </div>
     </section>
   </div>

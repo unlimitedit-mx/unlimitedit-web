@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NabvarComponent from "../elements/NabvarComponent.vue";
+import NavbarComponent from "../elements/NavbarComponent.vue";
 
 </script>
 
@@ -8,7 +8,7 @@ import NabvarComponent from "../elements/NabvarComponent.vue";
   <section class="hero is-fullheight is-transparent">
     <div class="hero-head">
       <!-- Navbar -->
-      <nabvar-component></nabvar-component>
+      <navbar-component></navbar-component>
     </div>
     <!-- Hero Image and Title -->
     <div class="hero-body">
