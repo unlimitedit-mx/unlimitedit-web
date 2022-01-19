@@ -60,7 +60,7 @@ window.addEventListener("scroll", scroll)
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="#" target="_blank">
+            <a class="is-centered-responsive" href="https://t.me/MichelOlvera" target="_blank">
               <img class="telegram" src="../../assets/img/logo/telegram.svg" alt="">
               Telegram
             </a>
@@ -112,7 +112,7 @@ window.addEventListener("scroll", scroll)
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="#" target="_blank">
+            <a class="is-centered-responsive" href="https://t.me/MichelOlvera" target="_blank">
               <img class="telegram" src="../../assets/img/logo/telegram.svg" alt="">
               Telegram
             </a>
