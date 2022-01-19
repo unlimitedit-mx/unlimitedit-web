@@ -175,6 +175,7 @@ body {
             //Responsive menu
             .navbar-menu {
                 &.is-active {
+                    background: $dark-bg !important;
                     width: 100%;
                 }
             }
