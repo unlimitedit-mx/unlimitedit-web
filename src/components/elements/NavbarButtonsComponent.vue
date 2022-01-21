@@ -17,7 +17,7 @@
     </div>
     <!-- Sign up -->
     <div class="navbar-item is-nav-link">
-      <a href="tel:+524434128717" class="button k-button k-primary raised has-gradient slanted">
+      <a href="tel:+524434128717" class="button k-button k-secondary raised has-gradient slanted">
         <span class="text"><img class="telegram" src="../../assets/img/icons/phone.svg" alt=""> Llámanos</span>
         <span class="front-gradient"></span>
       </a>
