@@ -10,14 +10,6 @@
     </div>
     <!-- Menu item -->
     <div class="navbar-item is-nav-link">
-      <a class="is-centered-responsive" href="#">Section</a>
-    </div>
-    <!-- Menu item -->
-    <div class="navbar-item is-nav-link">
-      <a class="is-centered-responsive" href="#">Section</a>
-    </div>
-    <!-- Menu item -->
-    <div class="navbar-item is-nav-link">
       <a class="is-centered-responsive" href="https://t.me/MichelOlvera" target="_blank">
         <img class="telegram" src="../../assets/img/logo/telegram.svg" alt="">
         Telegram
@@ -25,8 +17,8 @@
     </div>
     <!-- Sign up -->
     <div class="navbar-item is-nav-link">
-      <a href="#" class="button k-button k-primary raised has-gradient slanted">
-        <span class="text">Button</span>
+      <a href="tel:+524434128717" class="button k-button k-primary raised has-gradient slanted">
+        <span class="text"><img class="telegram" src="../../assets/img/icons/phone.svg" alt=""> Llámanos</span>
         <span class="front-gradient"></span>
       </a>
     </div>

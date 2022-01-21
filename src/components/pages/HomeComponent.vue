@@ -19,20 +19,8 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
             <div class="column is-5 landing-caption">
               <h1 class="title is-1 is-light is-semibold is-spaced main-title">Consultoría de TI</h1>
               <h2 class="subtitle is-5 is-light is-thin">
-                Soluciones de software e infraestructura a la medida para cualquier tipo de empresa.
+                Soluciones TI de alto rendimiento y escalabilidad, adaptables a cualquier tamaño de empresa y sector.
               </h2>
-              <!-- CTA -->
-              <p class="buttons">
-                <a href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
-                  <span class="text">Button</span>
-                  <span class="front-gradient"></span>
-                </a>
-                <a href="#" class="button k-button k-primary raised has-gradient is-fat is-bold">
-                  <span class="text">Button</span>
-                  <span class="front-gradient"></span>
-                </a>
-              </p>
-
             </div>
             <!-- Hero image -->
             <div class="column is-7">
@@ -63,16 +51,29 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
     <!-- Landing page Hero -->
 
     <!-- Start Section -->
-    <section id="start" class="section is-transparent is-relative">
+    <section id="start" class="section is-transparent is-relative pb-0">
       <!-- Content wrapper -->
       <div class="content-wrapper is-medium">
-        <div class="columns is-vcentered">
+        <!-- Divider -->
+        <div class="divider is-centered"></div>
+        <!-- Title & subtitle -->
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">Nuestros servicios</h2>
+        <h4 class="subtitle is-6 is-light has-text-centered is-compact"></h4>
+        <!-- Divider -->
+        <div class="divider is-centered"></div>
+
+        <div class="columns is-vcentered mt-6">
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
               <img src="../../assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Desarrollo de Software</h4>
-              <p>Desarrollamos el software que necesitas con las tecnologías y estándares más novedosos, desde tu página web hasta integración de sistemas. Aseguramos un balance justo entre rendimiento, escalabilidad y costos.</p>
+              <div class="cta-wrapper">
+                <a href="#software" class="button k-button k-primary raised has-gradient is-bold">
+                  <span class="text">Saber más</span>
+                  <span class="front-gradient"></span>
+                </a>
+              </div>
             </div>
           </div>
           <!-- Feature -->
@@ -80,7 +81,10 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
             <div class="feature">
               <img src="../../assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Infraestructura de Nube</h4>
-              <p>Te ayudamos a migrar, administrar y mantener tus sistemas e infraestructura de nube, utilizando IaC (Infrastructure as Code), nubes hibridas y multinube, asegurando la mayor disponibilidad y confianza.</p>
+              <a href="#infra" class="button k-button k-primary raised has-gradient is-bold">
+                <span class="text">Saber más</span>
+                <span class="front-gradient"></span>
+              </a>
             </div>
           </div>
           <!-- Feature -->
@@ -88,7 +92,10 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
             <div class="feature">
               <img src="../../assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Help Desk</h4>
-              <p>¿Necesitas solucionar problemas con los equipos de tus colaboradores o administrar tu servidor on-premises? Contamos con soporte remoto y presencial especializado que te ayudara, establecemos un SLA alineado a tu negocio.</p>
+              <a href="#helpdesk" class="button k-button k-primary raised has-gradient is-bold">
+                <span class="text">Saber más</span>
+                <span class="front-gradient"></span>
+              </a>
             </div>
           </div>
         </div>
@@ -96,6 +103,72 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
       <!-- Content wrapper -->
     </section>
     <!-- Start Section -->
+
+    <!-- Side Features section -->
+    <section id="big-gradient" class="section is-transparent pt-0">
+      <!-- Container -->
+      <div class="container">
+        <!-- Content wrapper -->
+        <div class="content-wrapper is-large">
+          <div id="software" class="columns is-vcentered">
+
+            <!-- Feature content -->
+            <div class="column is-6">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light has-text-centered">Desarrollo de Software</h3>
+                <div class="divider is-long mx-auto"></div>
+                <p class="is-light">Desarrollamos el software que necesitas con las tecnologías y estándares más novedosos, desde tu página web o tu propia App, hasta integración de sistemas. Aseguramos un balance justo entre rendimiento, escalabilidad y costos.</p>
+              </div>
+            </div>
+
+            <!-- Feature image -->
+            <div class="column is-6">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/softwaredev.svg" alt="">
+            </div>
+          </div>
+
+          <div id="infra" class="columns is-vcentered">
+            <!-- Feature image desktop -->
+            <div class="column is-6 is-hidden-mobile">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
+            </div>
+
+            <!-- Feature content -->
+            <div class="column is-6">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light has-text-centered">Infraestructura de Nube</h3>
+                <div class="divider is-long mx-auto"></div>
+                <p class="is-light">Te ayudamos a migrar, administrar y mantener tus sistemas e infraestructura de nube, utilizando IaC (Infrastructure as Code), nubes hibridas y multinube, asegurando la mayor disponibilidad y confianza.</p>
+              </div>
+            </div>
+
+            <!-- Feature image only for mobile -->
+            <div class="column is-6 is-hidden-desktop is-hidden-tablet">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
+            </div>
+          </div>
+
+          <div id="helpdesk" class="columns is-vcentered">
+            <!-- Feature content -->
+            <div class="column is-6">
+              <div class="side-feature-content">
+                <h3 class="title is-4 is-light has-text-centered">Help Desk</h3>
+                <div class="divider is-long mx-auto"></div>
+                <p class="is-light">¿Necesitas solucionar problemas con los equipos de tus colaboradores o administrar tu servidor on-premises? Contamos con soporte remoto y presencial especializado que te ayudara, establecemos un SLA alineado a tu negocio.</p>
+              </div>
+            </div>
+
+            <!-- Feature image -->
+            <div class="column is-6">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/helpdesk.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- /Content wrapper -->
+      </div>
+      <!-- /Container -->
+    </section>
+    <!-- /Side Features section -->
 
     <!-- Contact section -->
     <section class="section is-medium is-darkest">
