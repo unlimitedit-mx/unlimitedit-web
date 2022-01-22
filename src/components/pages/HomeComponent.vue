@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavbarComponent from "../elements/NavbarComponent.vue";
+import FooterComponent from "../elements/FooterComponent.vue";
 
 </script>
 
@@ -170,43 +171,7 @@ import NavbarComponent from "../elements/NavbarComponent.vue";
     </section>
     <!-- /Side Features section -->
 
-    <!-- Contact section -->
-    <section class="section is-medium is-darkest">
-      <!-- Container -->
-      <div class="container">
-        <!-- Divider -->
-        <div class="divider is-centered"></div>
-        <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">Contáctanos</h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">Uno de nuestros Unlimiters estará feliz de ayudarte a encontrar la mejor solución a tus necesidades específicas.</h4>
-
-        <!-- Content wrapper -->
-        <div class="content-wrapper is-large">
-          <div class="columns">
-            <div class="column is-8 is-offset-2">
-              <!-- Contact icons -->
-              <div class="contact-icons">
-                <!-- Phone -->
-                <a href="tel:+524434128717" class="contact-icon" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-phone" src="../../assets/img/icons/phone.svg" alt="">
-                </a>
-                <!-- Mail -->
-                <a href="mailto:m.olvera@unlimitedit.com.mx" class="contact-icon" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-phone" src="../../assets/img/icons/mail.svg" alt="">
-                </a>
-                <!-- Telegram -->
-                <a href="https://t.me/MichelOlvera" class="contact-icon" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
-                  <img class="is-telegram" src="../../assets/img/logo/telegram.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Content wrapper -->
-      </div>
-      <!-- Container -->
-    </section>
-    <!-- Contact section -->
+    <footer-component></footer-component>
   </div>
 </template>
 

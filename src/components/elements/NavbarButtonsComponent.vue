@@ -11,14 +11,14 @@
     <!-- Menu item -->
     <div class="navbar-item is-nav-link">
       <a class="is-centered-responsive" href="https://t.me/MichelOlvera" target="_blank">
-        <img class="telegram" src="../../assets/img/logo/telegram.svg" alt="">
+        <i class="fab fa-telegram-plane mr-1"></i>
         Telegram
       </a>
     </div>
     <!-- Sign up -->
     <div class="navbar-item is-nav-link">
       <a href="tel:+524434128717" class="button k-button k-secondary raised has-gradient slanted">
-        <span class="text"><img class="telegram" src="../../assets/img/icons/phone.svg" alt=""> Llámanos</span>
+        <span class="text"><i class="fas fa-phone mr-2"></i>Llámanos</span>
         <span class="front-gradient"></span>
       </a>
     </div>
