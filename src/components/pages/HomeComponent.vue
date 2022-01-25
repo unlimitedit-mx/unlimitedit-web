@@ -171,6 +171,89 @@ import FooterComponent from "../elements/FooterComponent.vue";
     </section>
     <!-- /Side Features section -->
 
+    <!-- Contact section -->
+    <section class="section is-medium is-darkest">
+      <!-- Container -->
+      <div class="container">
+        <!-- Divider -->
+        <div class="divider is-centered"></div>
+        <!-- Title & subtitle -->
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">Contáctanos</h2>
+        <h4 class="subtitle is-6 is-light has-text-centered is-compact">Uno de nuestros Unlimiters estará feliz de ayudarte a encontrar la mejor solución a tus necesidades específicas.</h4>
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper is-large">
+          <div class="columns">
+            <div class="column is-6 is-offset-3">
+              <!-- Form -->
+              <form class="contact-form">
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <!-- Field -->
+                    <div class="control-material is-secondary">
+                      <input name="name" class="material-input" type="text" required>
+                      <span class="material-highlight"></span>
+                      <span class="bar"></span>
+                      <label>Nombre completo</label>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <!-- Field -->
+                    <div class="control-material is-secondary">
+                      <input name="mail" class="material-input" type="email" required>
+                      <span class="material-highlight"></span>
+                      <span class="bar"></span>
+                      <label>Correo</label>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <!-- Field -->
+                    <div class="control-material is-secondary">
+                      <input name="phone" class="material-input" type="tel" minlength="10" maxlength="13" required>
+                      <span class="material-highlight"></span>
+                      <span class="bar"></span>
+                      <label>Teléfono a 10 dígitos</label>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <!-- Field -->
+                    <div class="control-material is-secondary">
+                      <input name="subject" class="material-input" type="text" required>
+                      <span class="material-highlight"></span>
+                      <span class="bar"></span>
+                      <label>Asunto</label>
+                    </div>
+                  </div>
+                  <div class="column is-12">
+                    <!-- Field -->
+                    <div class="control-material is-secondary">
+                      <textarea rows="3"></textarea>
+                      <span class="material-highlight"></span>
+                      <span class="bar"></span>
+                      <label>Mensaje</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Submit -->
+                <div class="has-text-centered">
+                  <button class="button is-button k-button k-primary raised has-gradient is-fat is-bold is-submit">
+                    <span class="text">Enviar</span>
+                    <span class="front-gradient"></span>
+                  </button>
+                </div>
+              </form>
+              <!-- /Form -->
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- Container -->
+    </section>
+    <!-- Contact section -->
+
     <footer-component></footer-component>
   </div>
 </template>

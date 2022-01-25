@@ -10,10 +10,6 @@
         </router-link>
       </div>
 
-      <div class="divider is-long is-centered"></div>
-      <h5 class="title is-5 is-light is-semibold has-text-centered is-spaced mb-1">Contáctanos</h5>
-      <h6 class="subtitle is-6 is-light has-text-centered is-compact">Uno de nuestros Unlimiters estará feliz de ayudarte a encontrar la mejor solución a tus necesidades específicas.</h6>
-
       <!-- Columns -->
       <div class="columns footer-columns is-vcentered">
         <div class="column is-6">
