@@ -99,7 +99,7 @@ onMounted(setupRoadmap);
         <li>
           <div>
             <span class="item-title">Valores</span>
-            <p>Libertad, Respeto, Empatía, Calidad, Responsabilidad, Trabajo en Equipo, Resolución de Problemas.</p>
+            <p>Libertad, Calidad, Trabajo en Equipo, Perseverancia, Resiliencia, Adaptabilidad y Pensar Fuera de la Caja.</p>
           </div>
         </li>
         <li>
