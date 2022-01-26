@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="footer-logo">
         <router-link to="/">
-          <img class="rotating" src="src/assets/img/logo/krypton-gradient.svg" alt="">
+          <img class="rotating" src="../../assets/img/logo/krypton-gradient.svg" alt="">
           <div class="brand-name">Unlimited IT</div>
           <div class="brand-subtitle my-2">Los limites son para las matemáticas, no para los proyectos.</div>
         </router-link>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Absolute image -->
-    <img class="solar-system" src="src/assets/img/bg/solar.svg" alt="">
+    <img class="solar-system" src="../../assets/img/bg/solar.svg" alt="">
   </footer>
 </template>
 

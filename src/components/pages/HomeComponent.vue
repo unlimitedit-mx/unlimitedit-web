@@ -26,7 +26,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
             <!-- Hero image -->
             <div class="column is-7">
               <figure class="image">
-                <img src="src/assets/img/illustrations/software.svg" alt="">
+                <img src="../../assets/img/illustrations/software.svg" alt="">
               </figure>
             </div>
           </div>
@@ -39,11 +39,11 @@ import ContactComponent from "../elements/ContactComponent.vue";
           <div class="tabs is-centered">
             <!-- Client / partner list -->
             <ul>
-              <li><a href="https://www.alsea.net/"><img class="hero-logo" src="src/assets/img/clients/alsea.svg" alt=""></a></li>
-              <li><a href="https://www.ubereats.com/"><img class="hero-logo" src="src/assets/img/clients/ubereats.svg" alt=""></a></li>
-              <li><a href="https://www.rappi.com.mx/"><img class="hero-logo" src="src/assets/img/clients/rappi.svg" alt=""></a></li>
-              <li><a href="https://www.pedidosya.com/"><img class="hero-logo" src="src/assets/img/clients/pedidosya.svg" alt=""></a></li>
-              <li><a href="https://www.getjusto.com/"><img class="hero-logo" src="src/assets/img/clients/getjusto.svg" alt=""></a></li>
+              <li><a href="https://www.alsea.net/"><img class="hero-logo" src="../../assets/img/clients/alsea.svg" alt=""></a></li>
+              <li><a href="https://www.ubereats.com/"><img class="hero-logo" src="../../assets/img/clients/ubereats.svg" alt=""></a></li>
+              <li><a href="https://www.rappi.com.mx/"><img class="hero-logo" src="../../assets/img/clients/rappi.svg" alt=""></a></li>
+              <li><a href="https://www.pedidosya.com/"><img class="hero-logo" src="../../assets/img/clients/pedidosya.svg" alt=""></a></li>
+              <li><a href="https://www.getjusto.com/"><img class="hero-logo" src="../../assets/img/clients/getjusto.svg" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -67,7 +67,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="src/assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="../../assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Desarrollo de Software</h4>
               <div class="cta-wrapper">
                 <a href="#software" class="button k-button k-secondary raised has-gradient is-bold">
@@ -80,7 +80,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="src/assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="../../assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Infraestructura de Nube</h4>
               <a href="#infra" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
@@ -91,7 +91,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="src/assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="../../assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Help Desk</h4>
               <a href="#helpdesk" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
@@ -124,14 +124,14 @@ import ContactComponent from "../elements/ContactComponent.vue";
 
             <!-- Feature image -->
             <div class="column is-6">
-              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/softwaredev.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/softwaredev.svg" alt="">
             </div>
           </div>
 
           <div id="infra" class="columns is-vcentered">
             <!-- Feature image desktop -->
             <div class="column is-6 is-hidden-mobile">
-              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/cloud.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
             </div>
 
             <!-- Feature content -->
@@ -145,7 +145,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
 
             <!-- Feature image only for mobile -->
             <div class="column is-6 is-hidden-desktop is-hidden-tablet">
-              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/cloud.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
             </div>
           </div>
 
@@ -161,7 +161,7 @@ import ContactComponent from "../elements/ContactComponent.vue";
 
             <!-- Feature image -->
             <div class="column is-6">
-              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/helpdesk.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/helpdesk.svg" alt="">
             </div>
           </div>
         </div>
