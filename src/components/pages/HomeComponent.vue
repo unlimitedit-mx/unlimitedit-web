@@ -1,53 +1,7 @@
 <script setup lang="ts">
 import NavbarComponent from "../elements/NavbarComponent.vue";
 import FooterComponent from "../elements/FooterComponent.vue";
-import axios from "axios";
-import { ref } from 'vue';
-
-type MailInfo = {
-  name: string,
-  mail: string,
-  phone: string,
-  subject: string,
-  message: string
-}
-
-let sendedMail = ref(false);
-let alertsHidden = ref(true);
-let contactButtonDisabled = ref(false);
-
-let name = ref(""), mail = ref(""), phone = ref(""), subject = ref(""), message = ref("");
-
-async function sendMail(){
-  contactButtonDisabled.value = true;
-  const url = "https://www.unlimitedit.com.mx/.netlify/functions/mailsender";
-  const mailInfo: MailInfo = {
-    name: name.value,
-    mail: mail.value,
-    phone: phone.value,
-    subject: subject.value,
-    message: message.value
-  }
-
-  console.log("Mail to send: %s", mailInfo);
-  try {
-    let response = await axios.post(url, mailInfo);
-    if (response.status === 200) {
-      sendedMail.value = true;
-      console.log("Sended mail");
-    } else {
-      sendedMail.value = false;
-      console.log("Error mail");
-    }
-  }catch (e){
-    if (e instanceof Error){
-      console.log(e.message)
-    }
-  }
-  alertsHidden.value = false;
-  contactButtonDisabled.value = false;
-}
-
+import ContactComponent from "../elements/ContactComponent.vue";
 </script>
 
 <template>
@@ -72,7 +26,7 @@ async function sendMail(){
             <!-- Hero image -->
             <div class="column is-7">
               <figure class="image">
-                <img src="../../assets/img/illustrations/software.svg" alt="">
+                <img src="src/assets/img/illustrations/software.svg" alt="">
               </figure>
             </div>
           </div>
@@ -85,11 +39,11 @@ async function sendMail(){
           <div class="tabs is-centered">
             <!-- Client / partner list -->
             <ul>
-              <li><a href="https://www.alsea.net/"><img class="hero-logo" src="../../assets/img/clients/alsea.svg" alt=""></a></li>
-              <li><a href="https://www.ubereats.com/"><img class="hero-logo" src="../../assets/img/clients/ubereats.svg" alt=""></a></li>
-              <li><a href="https://www.rappi.com.mx/"><img class="hero-logo" src="../../assets/img/clients/rappi.svg" alt=""></a></li>
-              <li><a href="https://www.pedidosya.com/"><img class="hero-logo" src="../../assets/img/clients/pedidosya.svg" alt=""></a></li>
-              <li><a href="https://www.getjusto.com/"><img class="hero-logo" src="../../assets/img/clients/getjusto.svg" alt=""></a></li>
+              <li><a href="https://www.alsea.net/"><img class="hero-logo" src="src/assets/img/clients/alsea.svg" alt=""></a></li>
+              <li><a href="https://www.ubereats.com/"><img class="hero-logo" src="src/assets/img/clients/ubereats.svg" alt=""></a></li>
+              <li><a href="https://www.rappi.com.mx/"><img class="hero-logo" src="src/assets/img/clients/rappi.svg" alt=""></a></li>
+              <li><a href="https://www.pedidosya.com/"><img class="hero-logo" src="src/assets/img/clients/pedidosya.svg" alt=""></a></li>
+              <li><a href="https://www.getjusto.com/"><img class="hero-logo" src="src/assets/img/clients/getjusto.svg" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -113,7 +67,7 @@ async function sendMail(){
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="../../assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="src/assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Desarrollo de Software</h4>
               <div class="cta-wrapper">
                 <a href="#software" class="button k-button k-secondary raised has-gradient is-bold">
@@ -126,7 +80,7 @@ async function sendMail(){
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="../../assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="src/assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Infraestructura de Nube</h4>
               <a href="#infra" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
@@ -137,7 +91,7 @@ async function sendMail(){
           <!-- Feature -->
           <div class="column is-4">
             <div class="feature">
-              <img src="../../assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+              <img src="src/assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Help Desk</h4>
               <a href="#helpdesk" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
@@ -170,14 +124,14 @@ async function sendMail(){
 
             <!-- Feature image -->
             <div class="column is-6">
-              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/softwaredev.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/softwaredev.svg" alt="">
             </div>
           </div>
 
           <div id="infra" class="columns is-vcentered">
             <!-- Feature image desktop -->
             <div class="column is-6 is-hidden-mobile">
-              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/cloud.svg" alt="">
             </div>
 
             <!-- Feature content -->
@@ -191,7 +145,7 @@ async function sendMail(){
 
             <!-- Feature image only for mobile -->
             <div class="column is-6 is-hidden-desktop is-hidden-tablet">
-              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/cloud.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/cloud.svg" alt="">
             </div>
           </div>
 
@@ -207,7 +161,7 @@ async function sendMail(){
 
             <!-- Feature image -->
             <div class="column is-6">
-              <img class="side-feature mx-auto is-block" src="../../assets/img/illustrations/helpdesk.svg" alt="">
+              <img class="side-feature mx-auto is-block" src="src/assets/img/illustrations/helpdesk.svg" alt="">
             </div>
           </div>
         </div>
@@ -217,95 +171,7 @@ async function sendMail(){
     </section>
     <!-- /Side Features section -->
 
-    <!-- Contact section -->
-    <section class="section is-medium is-darkest">
-      <!-- Container -->
-      <div class="container">
-        <!-- Divider -->
-        <div class="divider is-centered"></div>
-        <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">Contáctanos</h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">Uno de nuestros Unlimiters estará feliz de ayudarte a encontrar la mejor solución a tus necesidades específicas.</h4>
-
-        <!-- Content wrapper -->
-        <div class="content-wrapper is-large">
-          <div class="columns">
-            <div class="column is-6 is-offset-3">
-              <!-- Form -->
-              <form class="contact-form" v-on:submit.prevent="sendMail">
-                <div class="columns is-multiline">
-                  <div class="column is-6">
-                    <!-- Field -->
-                    <div class="control-material is-secondary">
-                      <input v-model="name" name="name" class="material-input" type="text" placeholder="Nombre completo" required>
-                      <span class="material-highlight"></span>
-                      <span class="bar"></span>
-                    </div>
-                  </div>
-                  <div class="column is-6">
-                    <!-- Field -->
-                    <div class="control-material is-secondary">
-                      <input v-model="mail" name="mail" class="material-input" type="email" placeholder="Correo" required>
-                      <span class="material-highlight"></span>
-                      <span class="bar"></span>
-                    </div>
-                  </div>
-                  <div class="column is-6">
-                    <!-- Field -->
-                    <div class="control-material is-secondary">
-                      <input v-model="phone" name="phone" class="material-input" type="tel" minlength="10" maxlength="13" placeholder="Teléfono a 10 dígitos" required>
-                      <span class="material-highlight"></span>
-                      <span class="bar"></span>
-                    </div>
-                  </div>
-                  <div class="column is-6">
-                    <!-- Field -->
-                    <div class="control-material is-secondary">
-                      <input v-model="subject" name="subject" class="material-input" type="text" placeholder="Asunto" required>
-                      <span class="material-highlight"></span>
-                      <span class="bar"></span>
-                    </div>
-                  </div>
-                  <div class="column is-12">
-                    <!-- Field -->
-                    <div class="control-material is-secondary">
-                      <textarea v-model="message" name="message" rows="3" placeholder="Mensaje" required></textarea>
-                      <span class="material-highlight"></span>
-                      <span class="bar"></span>
-                    </div>
-                  </div>
-                  <div class="column is-12" :class="{'is-hidden': alertsHidden || !sendedMail}">
-                    <article class="message is-success secondary-gradient">
-                      <div class="message-body has-text-white">
-                        <strong>Correo enviado correctamente</strong>, te responderemos en cuanto nos sea posible.
-                      </div>
-                    </article>
-                  </div>
-                  <div class="column is-12" :class="{'is-hidden': alertsHidden || sendedMail}">
-                    <article class="message is-danger">
-                      <div class="message-body">
-                        <strong>Tuvimos problemas al enviar el mensaje</strong>, reintenta nuevamente.
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <!-- Submit -->
-                <div class="has-text-centered">
-                  <button class="button is-button k-button k-primary raised has-gradient is-fat is-bold is-submit" :disabled="contactButtonDisabled">
-                    <span class="text">Enviar</span>
-                    <span class="front-gradient"></span>
-                  </button>
-                </div>
-              </form>
-              <!-- /Form -->
-            </div>
-          </div>
-        </div>
-        <!-- Content wrapper -->
-      </div>
-      <!-- Container -->
-    </section>
-    <!-- Contact section -->
+    <contact-component></contact-component>
 
     <footer-component></footer-component>
   </div>
