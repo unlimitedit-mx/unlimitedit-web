@@ -2,6 +2,9 @@
 import NavbarComponent from "../elements/NavbarComponent.vue";
 import FooterComponent from "../elements/FooterComponent.vue";
 import {onMounted} from "vue";
+import {ref} from "vue";
+
+let isModalOpen = ref(false);
 
 function setupRoadmap() {
   // define variables
@@ -105,17 +108,138 @@ onMounted(setupRoadmap);
         <li>
           <div>
             <span class="item-title">Tecnologías</span>
-            <p>Podríamos enlistar todas las tecnologías que manejamos y hacer una lista de nombres enormes, pero ¿eso realmente importa?</p>
+            <p>Podríamos enlistar todas las tecnologías que manejamos y hacer una lista de nombres enorme, pero ¿eso realmente importa?</p>
             <p class="mt-2">Una vez te comuniques con nosotros y nos comentes cuál es tu idea / proyecto y requisitos, comenzaremos a trabajar en diferentes propuestas y presupuestos para que tu tomes la decisión que prefieras.</p>
+            <button class="button k-button k-secondary raised has-gradient is-fullwidth mt-2" v-on:click="isModalOpen = true">¡Quiero verla de cualquier manera!</button>
           </div>
         </li>
       </ul>
     </section>
 
     <footer-component></footer-component>
+
+    <div id="modal" class="modal" :class="{'is-active': isModalOpen}">
+      <div class="modal-background" v-on:click="isModalOpen = false"></div>
+      <div id="modal-content" class="modal-content has-text-white">
+        <div class="container p-4">
+          <div class="columns is-multiline">
+            <div class="column is-12 is-flex is-justify-content-space-between">
+              <p class="is-size-5">Tecnologías</p>
+              <button class="delete is-right" aria-label="close" v-on:click="isModalOpen = false"></button>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>AWS</li>
+                <li>GCP</li>
+                <li>Azure</li>
+              </ul>            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>C#</li>
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Swift</li>
+                <li>Rust</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Go</li>
+              </ul>            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>.NET Core</li>
+                <li>Spring</li>
+                <li>Laravel</li>
+                <li>django</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>Node</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>django</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>MongoDB</li>
+                <li>Redis</li>
+                <li>DynamoDB</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>Serverless</li>
+                <li>CloudFormation</li>
+                <li>Jenkins</li>
+                <li>CodePipeline</li>
+                <li>Cloud Build</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>SNS</li>
+                <li>SQS</li>
+                <li>Kafka</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>Lambda</li>
+                <li>Cloud Functions</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>ECS</li>
+                <li>Cloud Run</li>
+                <li>App Service</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
+                <li>Bootstrap</li>
+                <li>Bulma</li>
+                <li>Sass</li>
+                <li>Vue</li>
+                <li>Vite</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Angular</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
+#modal {
+  z-index: 999;
+}
 
+#modal-content {
+  background: rgba(0, 83, 251, 0.3);
+  border: 1px solid rgba(0, 83, 251, 1);
+  width: 90%;
+}
 </style>
