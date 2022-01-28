@@ -110,7 +110,7 @@ onMounted(setupRoadmap);
             <span class="item-title">Tecnologías</span>
             <p>Podríamos enlistar todas las tecnologías que manejamos y hacer una lista de nombres enorme, pero ¿eso realmente importa?</p>
             <p class="mt-2">Una vez te comuniques con nosotros y nos comentes cuál es tu idea / proyecto y requisitos, comenzaremos a trabajar en diferentes propuestas y presupuestos para que tu tomes la decisión que prefieras.</p>
-            <button class="button k-button k-secondary raised has-gradient is-fullwidth mt-2" v-on:click="isModalOpen = true">¡Quiero verla de cualquier manera!</button>
+            <button class="button k-button k-secondary raised has-gradient is-fullwidth mt-2" v-on:click="isModalOpen = true">¡Quiero ver la lista!</button>
           </div>
         </li>
       </ul>
