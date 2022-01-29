@@ -15,11 +15,18 @@ const router = createRouter({
   history,
   routes,
   scrollBehavior: (to, from, savedPosition) => {
+    //Return router to savedPosition
     if (savedPosition) {
       return savedPosition
-    } else {
-      return { top: 0 }
     }
+    //Return router to anchor tag (custom id element)
+    if (to.hash) {
+      return {
+        el: to.hash
+      }
+    }
+    //Return router to top.
+    return { top: 0 }
   }
 });
 

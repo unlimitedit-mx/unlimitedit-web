@@ -70,10 +70,10 @@ import ContactComponent from "../elements/ContactComponent.vue";
               <img src="../../assets/img/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Desarrollo de Software</h4>
               <div class="cta-wrapper">
-                <a href="services#software" class="button k-button k-secondary raised has-gradient is-bold">
+                <router-link to="/services#software" class="button k-button k-secondary raised has-gradient is-bold">
                   <span class="text">Saber más</span>
                   <span class="front-gradient"></span>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -82,10 +82,10 @@ import ContactComponent from "../elements/ContactComponent.vue";
             <div class="feature">
               <img src="../../assets/img/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Infraestructura de Nube</h4>
-              <a href="services#infra" class="button k-button k-secondary raised has-gradient is-bold">
+              <router-link to="/services#infra" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
                 <span class="front-gradient"></span>
-              </a>
+              </router-link>
             </div>
           </div>
           <!-- Feature -->
@@ -93,10 +93,10 @@ import ContactComponent from "../elements/ContactComponent.vue";
             <div class="feature">
               <img src="../../assets/img/icons/cubes2.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
               <h4 class="title is-6 is-tight is-light">Help Desk</h4>
-              <a href="services#helpdesk" class="button k-button k-secondary raised has-gradient is-bold">
+              <router-link to="/services#helpdesk" class="button k-button k-secondary raised has-gradient is-bold">
                 <span class="text">Saber más</span>
                 <span class="front-gradient"></span>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
