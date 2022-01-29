@@ -4,5 +4,11 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 200
+  force = true
+
 [functions]
   directory = "functions"
