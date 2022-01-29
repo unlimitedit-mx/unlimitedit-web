@@ -10,6 +10,10 @@
     </div>
     <!-- Menu item -->
     <div class="navbar-item is-nav-link">
+      <router-link to="/services" class="is-centered-responsive">Servicios</router-link>
+    </div>
+    <!-- Menu item -->
+    <div class="navbar-item is-nav-link">
       <a class="is-centered-responsive" href="https://t.me/MichelOlvera" target="_blank">
         <i class="fab fa-telegram-plane mr-1"></i>
         Telegram

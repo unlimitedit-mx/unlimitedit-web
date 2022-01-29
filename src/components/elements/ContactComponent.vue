@@ -12,7 +12,7 @@
       <!-- Content wrapper -->
       <div class="content-wrapper is-large">
         <div class="columns">
-          <div class="column is-6 is-offset-3">
+          <div class="column is-6 mx-auto">
             <!-- Form -->
             <form class="contact-form" v-on:submit.prevent="sendMail">
               <div class="columns is-multiline">
