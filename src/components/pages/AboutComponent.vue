@@ -215,6 +215,12 @@ onMounted(setupRoadmap);
             </div>
             <div class="column is-size-6">
               <ul>
+                <li>REST</li>
+                <li>SOAP</li>
+              </ul>
+            </div>
+            <div class="column is-size-6">
+              <ul>
                 <li>Bootstrap</li>
                 <li>Bulma</li>
                 <li>Sass</li>

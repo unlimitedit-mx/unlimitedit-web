@@ -25,7 +25,7 @@ import FooterComponent from "../elements/FooterComponent.vue";
               <div class="side-feature-content">
                 <h3 class="title is-4 is-light has-text-centered">Desarrollo de Software</h3>
                 <div class="divider is-long mx-auto"></div>
-                <p class="is-light">Desarrollamos el software que necesitas con las tecnologías y estándares más novedosos, desde tu página web o tu propia App, hasta integración de sistemas. Aseguramos un balance justo entre rendimiento, escalabilidad y costos.</p>
+                <p class="is-light">Desarrollamos el software que necesitas con las tecnologías y estándares más novedosos, desde tu web eCommerce o tu propia App, hasta integración de sistemas. Aseguramos un balance justo entre rendimiento, escalabilidad y costos.</p>
               </div>
             </div>
 
