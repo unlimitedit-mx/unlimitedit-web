@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="footer-logo">
         <router-link to="/">
-          <img class="rotating" src="../../assets/img/logo/krypton-gradient.svg" alt="">
+          <img src="../../assets/img/logo/unlimitedit-gradient.svg" alt="">
           <div class="brand-name">Unlimited IT</div>
           <div class="brand-subtitle my-2">Los limites son para las matemáticas, no para los proyectos.</div>
         </router-link>

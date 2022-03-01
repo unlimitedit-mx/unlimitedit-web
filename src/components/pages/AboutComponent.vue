@@ -52,7 +52,7 @@ onMounted(setupRoadmap);
           <div class="columns">
             <div class="column is-6 is-offset-3">
               <div class="roadmap-image">
-                <img class="rotating" src="../../assets/img/logo/krypton-gradient.svg">
+                <img src="../../assets/img/logo/unlimitedit-gradient.svg">
               </div>
               <h1 class="title is-2 is-light is-semibold is-spaced main-title">Quienes Somos</h1>
               <h2 class="subtitle is-5 is-light is-thin">

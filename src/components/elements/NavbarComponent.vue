@@ -30,7 +30,7 @@ window.addEventListener("scroll", scroll)
       <!-- Brand -->
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
-          <img class="rotating" src="../../assets/img/logo/krypton.svg" alt="">
+          <img src="../../assets/img/logo/unlimitedit.svg" alt="">
           <span class="brand-name">Unlimited IT</span>
         </router-link>
         <!-- Responsive toggle -->
@@ -51,7 +51,7 @@ window.addEventListener("scroll", scroll)
       <!-- Brand -->
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item">
-          <img class="rotating" src="../../assets/img/logo/krypton-gradient.svg" alt="">
+          <img src="../../assets/img/logo/unlimitedit-gradient.svg" alt="">
           <span class="brand-name">Unlimited IT</span>
         </router-link>
         <!-- Responsive toggle -->
