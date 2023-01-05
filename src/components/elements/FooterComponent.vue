@@ -15,25 +15,28 @@
         <div class="column is-6">
           <!-- Links group -->
           <ul class="footer-links">
-            <li>
-              <a href="https://www.facebook.com/UnlimitedITMX"><i class="fab fa-facebook mr-2"></i>Facebook</a>
-            </li>
+            <!--
+              <li>
+                <a href="https://www.facebook.com/UnlimitedITMX"><i class="fab fa-facebook mr-2"></i>Facebook</a>
+              </li>
 
-            <li>
-              <a href="https://www.instagram.com/UnlimitedITMX"><i class="fab fa-instagram mr-2"></i>Instagram</a>
-            </li>
-
+              <li>
+                <a href="https://www.instagram.com/UnlimitedITMX"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+              </li>
+            -->
             <li>
               <a href="https://api.whatsapp.com/send?phone=5214434128717&text=%C2%A1Hola!%20Me%20justar%C3%ADa%20obtener%20informaci%C3%B3n%20sobre%20Unlimited%20IT"><i class="fab fa-whatsapp mr-2"></i>WhatsApp</a>
+            </li>
+
+            <li>
+              <a href="mailto:m.olvera@unlimitedit.com.mx"><i class="fas fa-envelope-open-text mr-2"></i>Correo</a>
             </li>
           </ul>
         </div>
         <!-- Links group -->
         <div class="column is-6">
           <ul class="footer-links">
-            <li>
-              <a href="mailto:m.olvera@unlimitedit.com.mx"><i class="fas fa-envelope-open-text mr-2"></i>Correo</a>
-            </li>
+
 
             <li>
               <a href="tel:+524434128717"><i class="fas fa-phone mr-2"></i>Teléfono</a>
