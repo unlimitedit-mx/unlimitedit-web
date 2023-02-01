@@ -1,6 +1,7 @@
-import { Handler } from "@netlify/functions";
+import {Handler} from "@netlify/functions";
 import nodemailer from 'nodemailer';
 import {HTTP_STATUS_OK} from "@netlify/functions/dist/lib/consts";
+import {Response} from "@netlify/functions/dist/function/response";
 
 const handler: Handler = async (event, context) => {
     const messageData = JSON.parse(event.body!!);
@@ -33,9 +34,11 @@ const handler: Handler = async (event, context) => {
 
     console.log("Message sent: %s", info.messageId);
 
-    return {
+    let response: Response = {
         statusCode: HTTP_STATUS_OK
     };
+
+    return response;
 };
 
 export { handler };
