@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeComponent from "./components/pages/HomeComponent.vue";
 import AboutComponent from "./components/pages/AboutComponent.vue";
 import ServicesComponent from "./components/pages/ServicesComponent.vue";
+import PrivacyComponent from "./components/pages/watchterminal/PrivacyComponent.vue";
 
 const routes = [
   { path: "/", component: HomeComponent },
   { path: "/about", component: AboutComponent },
   { path: "/services", component: ServicesComponent },
+  { path: "/watchterminal/privacy", component: PrivacyComponent },
 ];
 
 const history = createWebHistory();

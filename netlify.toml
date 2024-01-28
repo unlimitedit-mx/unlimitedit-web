@@ -10,5 +10,11 @@
   status = 200
   force = true
 
+ [[redirects]]
+   from = "/watchterminal/privacy"
+   to = "/"
+   status = 200
+   force = true
+
 [functions]
   directory = "functions"
