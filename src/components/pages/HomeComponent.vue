@@ -48,8 +48,9 @@ import ContactComponent from "../elements/ContactComponent.vue";
               <li><a href="https://www.getjusto.com/"><img class="hero-logo" src="../../assets/img/clients/getjusto.svg" alt=""></a></li>
             </ul>
           </div>
-          <div class="has-text-centered is-size-7 is-italic">
-            <p>Los logotipos de Alsea, Uber Eats, Rappi, PedidosYa y GetJusto que aparecen en esta página son propiedad intelectual de sus respectivas empresas. Su uso aquí no implica afiliación, patrocinio ni respaldo por parte de nuestra organización. Estos logotipos se utilizan únicamente con fines ilustrativos para destacar nuestra relación con estos proveedores de servicios. Cualquier consulta o reclamo relacionado con los derechos de autor o la propiedad intelectual debe dirigirse directamente a las empresas mencionadas.</p>
+          <div class="has-text-centered is-size-7">
+            <p>Descargo de Responsabilidad:</p>
+            <p class="is-italic">Los logotipos de Alsea, Uber Eats, Rappi, PedidosYa y GetJusto que aparecen en esta página son propiedad intelectual de sus respectivas empresas. Su uso aquí no implica afiliación, patrocinio ni respaldo por parte de nuestra organización. Estos logotipos se utilizan únicamente con fines ilustrativos para destacar nuestra relación con estos proveedores de servicios. Cualquier consulta o reclamo relacionado con los derechos de autor o la propiedad intelectual debe dirigirse directamente a las empresas mencionadas.</p>
           </div>
         </div>
       </div>
