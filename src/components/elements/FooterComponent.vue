@@ -49,7 +49,7 @@
         </div>
       </div>
       <!-- Copyright -->
-      <p class="k-copyright">© 2023 | Unlimited IT. All Rights Reserved</p>
+      <!-- <p class="k-copyright">© 2023 | Unlimited IT. All Rights Reserved</p> -->
       <br>
     </div>
 
