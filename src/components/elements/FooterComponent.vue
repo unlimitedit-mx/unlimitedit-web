@@ -41,10 +41,11 @@
             <li>
               <a href="tel:+524434128717"><i class="fas fa-phone mr-2"></i>Teléfono</a>
             </li>
-
+            <!-- Telegram link
             <li>
               <a href="https://t.me/MichelOlvera"><i class="fab fa-telegram-plane mr-2"></i>Telegram</a>
             </li>
+            -->
           </ul>
         </div>
       </div>
